@@ -1,0 +1,121 @@
+/* Styling for the About section */
+#about {
+    background-color: #5CDB95; /* Medium green background for about section */
+    text-align: center;
+    position: relative; /* Set position relative for positioning the icons */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    color: #05386B; /* Dark blue text color */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-icons a {
+    margin: 0 10px;
+}
+
+.contact-icons img {
+    width: 60px; /* Adjust icon size */
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Contact Icons Hover Effect */
+.contact-icons a:hover img {
+    filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+.contact-icons .tooltip-container {
+    position: relative; /* Set position relative for tooltip positioning */
+    margin-bottom: 50px;
+}
+.contact-icons .tooltip {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the icon */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensure tooltip appears above other content */
+}
+
+
+.contact-icons .gmail-icon:hover + .tooltip {
+    display: block; /* Display the tooltip when Gmail icon is hovered */
+}
+
+
+
+.tooltip-container {
+    position: relative; /* Set position relative for tooltip positioning */
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the icon */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #05386B; /* Dark blue background for tooltip */
+    color: #649618; /* Lightest greenish text color for tooltip */
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensure tooltip appears above other content */
+}
+
+/* Show tooltip when icon is hovered */
+.gmail-icon:hover + .tooltip,
+.instagram-icon:hover + .tooltip,
+.linkedin-icon:hover + .tooltip {
+    display: block;
+}
+
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+
+    .about-text h2 {
+        font-size: 32px; /* Reduce heading size on smaller screens */
+    }
+
+    .about-text p {
+        font-size: 18px; /* Reduce paragraph font size on smaller screens */
+    }
+}

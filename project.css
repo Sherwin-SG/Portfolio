@@ -1,0 +1,113 @@
+/* Section styles */
+#projects {
+    background-color: #2b67a3; /* Fallback color */
+    background-image: url('path/to/main-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.project {
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    width: calc(50% - 20px); /* Adjusted width with gap between projects */
+    margin-bottom: 40px; /* Add margin between rows of projects */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow projects to wrap onto new line if needed */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project1, .project2 {
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%; /* Adjusted width to full width minus margins */
+        margin-bottom: 20px; /* Add space below each project on smaller screens */
+    }
+}
+
+.project1 {
+    background-image: url('images/payroll.png');
+}
+
+.project2 {
+    background-image: url('images/ai.jpg');
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.project:hover .project-info {
+    opacity: 1; /* Show project info on hover */
+}
+
+.project-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #379683; /* Adjust button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: #05386B; /* Adjust hover color */
+}
+ 
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

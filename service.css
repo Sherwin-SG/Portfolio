@@ -1,0 +1,82 @@
+#capabilities {
+    background-color: #8EE4AF;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.capabilities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 20px;
+}
+
+.capability {
+    width: calc(50% - 20px);
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5CDB95;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.capability:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.capability img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.capability-description {
+    padding: 20px;
+    text-align: center;
+}
+
+.capability h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.capability p {
+    font-size: 1rem;
+    color: #666;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.capability:hover p {
+    opacity: 1;
+}
+
+.capability.webdev {
+    /* Styles for Web Development capability */
+    transform:translateX() translateY(); /* Move the capability up */
+}
+
+.capability.python {
+    /* Styles for Python Programming capability */
+    transform: translateX() translateY(); /* Move the capability to the left */
+}
+
+.capability.video-editing {
+    /* Styles for Video Editing capability */
+    transform: translateY(); /* Move the capability down */
+}
+
+.capability.sql {
+    /* Styles for SQL Databases capability */
+    transform: translateY(); /* Move the capability up */
+}
+
+

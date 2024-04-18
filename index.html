@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <button class="navbar-toggle" onclick="toggleNavbar()">
+        <div id="hamburger-icon" class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </button>
+
+<nav class="navbar" id="navbar">
+    <ul>
+        <li><a href="#welcome"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#capabilities"><i class="fas fa-cogs"></i> Capabilities</a></li>
+        <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+    </ul>
+</nav>
+
+
+    
+
+    <div class="container">
+        <section id="welcome" class="section">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h1>Sherwin Gonsalves</h1>
+                    <!-- Additional text or description if needed -->
+                    <p>Software Developer | AI Enthusiast</p>
+                    <!-- Download CV Button -->
+                    <a href="path/to/your-cv.pdf" download class="download-cv-button">Download CV</a>
+                </div>
+                <div class="welcome-image">
+                    <img src="images/sherwinpic.jpg" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+        
+        <section id="capabilities" class="section">
+            <h2>Capabilities</h2>
+            <div class="capabilities-container">
+                <div class="capability webdev">
+                    <img src="images/webdev.png" alt="Web Development">
+                    <div class="capability-description">
+                        <h3>Web Development</h3>
+                        <p>Proficient in HTML, CSS, JavaScript, and responsive design.</p>
+                    </div>
+                </div>
+                <div class="capability python">
+                    <img src="images/python.jpg" alt="Python Programming">
+                    <div class="capability-description">
+                        <h3>Python Programming</h3>
+                        <p>Experience in building applications and automation scripts.</p>
+                    </div>
+                </div>
+                <div class="capability video-editing">
+                    <img src="images/davinci.jpg" alt="Video Editing">
+                    <div class="capability-description">
+                        <h3>Video Editing</h3>
+                        <p>Skilled in editing and post-production techniques.</p>
+                    </div>
+                </div>
+                <div class="capability sql">
+                    <img src="images/mysql.png" alt="SQL Databases">
+                    <div class="capability-description">
+                        <h3>SQL Databases</h3>
+                        <p>Proficient in database design, querying, and optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+            <section id="projects" class="section">
+                <h2 style="text-align: center; color: #fff; margin-bottom: 30px;">My Projects</h2>
+
+<div id="projects">
+    <div class="projects-container">
+        <div class="project project1">
+            <div class="project-image" style="background-image: url('images/payroll.png');"></div>
+            <div class="project-details">
+                <h3>Payroll Management System</h3>
+                <div class="project-info">
+                    <p>The Payroll Management System is a web-based application designed to simplify and streamline payroll processing for businesses. Developed using PHP, CSS, and JavaScript, this system allows employers to efficiently manage employee salaries, deductions, and payments.</p>
+                    <a href="https://github.com/Sherwin-SG/Dmqp.git" target="_blank" class="github-link" class="github-link">View Project 1 on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project project2">
+            <div class="project-image" style="background-image: url('images/ai.jpg');"></div>
+            <div class="project-details">
+                <h3>AI Chatbot</h3>
+                
+                <div class="project-info">
+                    <p> An innovative AI chatbot designed to provide intelligent and personalized conversational experiences. This chatbot leverages cutting-edge natural language processing (NLP) and machine learning techniques to understand and respond to user queries in real-time.</p>
+                    <a href="#" class="github-link">View Project 2 on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </section>
+            
+        
+            <section id="about" class="section">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>
+                            Hello, I'm Sherwin Gonsalves, a student at Don Bosco College of Engineering. I have a strong passion for design and technology, where I excel in transforming ideas into visually engaging and functional solutions.
+
+I am committed to continuous learning and growth within the dynamic landscape of design and technology, always striving to deliver impactful and innovative work. Collaboration is key to my approach, and I thrive in team environments where we can bring ideas to life.
+
+Let's collaborate and create something remarkable together!
+                        </p>
+                    </div>
+            
+                    <!-- Contact Icons -->
+                    <div class="contact-icons">
+                        <!-- Gmail Icon with Tooltip -->
+                        <div class="tooltip-container">
+                            <a href="mailto:sherwingonsalves.sg@gmail.com" class="gmail-icon">
+                                <img src="images/gmail1.png" alt="Gmail">
+                            </a>
+                            <div class="tooltip" id="gmail-tooltip">
+                                sherwingonsalves.sg@gmail.com
+                            </div>
+                        </div>
+                        
+                        <!-- Instagram Icon with Tooltip -->
+                        <div class="tooltip-container">
+                            <a href="https://www.instagram.com/sherwin_gonsalves" target="_blank" class="instagram-icon">
+                                <img src="images/insta.png" alt="Instagram">
+                            </a>
+                            <div class="tooltip" id="instagram-tooltip">
+                                @sherwin_gonsalves
+                            </div>
+                        </div>
+                        
+                        <!-- LinkedIn Icon with Tooltip -->
+                        <div class="tooltip-container">
+                            <a href="https://www.linkedin.com/in/sherwin-gonsalves-64a722275" target="_blank" class="linkedin-icon">
+                                <img src="images/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <div class="tooltip" id="linkedin-tooltip">
+                                Sherwin Gonsalves
+                            </div>
+                        </div>
+                    </div>
+            </section>
+    </div>
+    <script>
+        // Function to handle scrolling behavior for services
+// Function to handle scrolling behavior for services
+function handleServiceScroll() {
+    var servicesSection = document.getElementById("services");
+    var services = servicesSection.querySelectorAll(".service");
+
+    // Check if the top of the services section is below the viewport
+    if (servicesSection.getBoundingClientRect().top > window.innerHeight) {
+        // Hide all services
+        services.forEach(function(service) {
+            service.classList.remove("visible");
+        });
+    } else {
+        // Loop through each service
+        services.forEach(function(service, index) {
+            // Check if the service is in the viewport
+            if (isInViewport(service)) {
+                // Add a class to reveal the service after a delay
+                setTimeout(function() {
+                    service.classList.add("visible");
+                }, index * 300); // Adjust the delay (300ms in this example)
+            } else {
+                // If the service is not in the viewport, hide it
+                service.classList.remove("visible");
+            }
+        });
+    }
+}
+
+// Add scroll event listener to handle scrolling behavior for services
+window.addEventListener("scroll", handleServiceScroll);
+
+// Initial check for services visibility
+handleServiceScroll();
+
+
+    </script>
+    
+    
+
+    <script src="script.js"></script>
+    <script src="project.js"></script>
+</body>
+</html>
