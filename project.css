@@ -1,7 +1,6 @@
 /* Section styles */
 #projects {
-    background-color: #2b67a3; /* Fallback color */
-    background-image: url('path/to/main-background-image.jpg');
+    background : linear-gradient(to bottom, #05386B, #379683);
     background-size: cover;
     background-position: center;
     color: #fff;
