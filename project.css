@@ -1,4 +1,3 @@
-/* Section styles */
 #projects {
     background: linear-gradient(to bottom, #05386B, #379683);
     background-size: cover;
@@ -12,8 +11,8 @@
     position: relative;
     padding: 30px;
     border-radius: 10px;
-    width: calc(50% - 20px); /* Adjusted width with gap between projects */
-    margin-bottom: 40px; /* Add margin between rows of projects */
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     box-sizing: border-box;
     overflow: hidden;
@@ -23,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* Allow projects to wrap onto new line if needed */
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -42,8 +41,8 @@
     }
 
     .project {
-        width: 100%; /* Adjusted width to full width minus margins */
-        margin-bottom: 20px; /* Add space below each project on smaller screens */
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -70,18 +69,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .project:hover .project-info {
-    opacity: 1; /* Show project info on hover */
+    opacity: 1;
 }
 
 .project-info p {
@@ -94,7 +93,7 @@
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #379683; /* Adjust button color */
+    background-color: #379683;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -102,7 +101,7 @@
 }
 
 .github-link:hover {
-    background-color: #05386B; /* Adjust hover color */
+    background-color: #05386B;
 }
 
 h2 {
