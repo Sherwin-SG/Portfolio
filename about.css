@@ -2,9 +2,9 @@
 #about {
     background: linear-gradient(to bottom, #5CDB95, #379683);
     text-align: center;
-    position: relative; /* Set position relative for positioning the icons */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the background image */
+    position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
 .about-content {
@@ -21,7 +21,7 @@
 
 .about-text h2 {
     font-size: 40px;
-    color: #05386B; /* Dark blue text color */
+    color: #05386B;
     margin-bottom: 20px;
 }
 
@@ -44,78 +44,51 @@
 }
 
 .contact-icons img {
-    width: 60px; /* Adjust icon size */
+    width: 60px;
     height: 60px;
     object-fit: cover;
 }
 
 /* Contact Icons Hover Effect */
 .contact-icons a:hover img {
-    filter: brightness(1.2); /* Increase brightness on hover */
+    filter: brightness(1.2);
 }
 
 .contact-icons .tooltip-container {
-    position: relative; /* Set position relative for tooltip positioning */
+    position: relative;
     margin-bottom: 50px;
 }
+
 .contact-icons .tooltip {
     display: none;
     position: absolute;
-    top: 100%; /* Position below the icon */
+    top: 100%;
     left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
+    transform: translateX(-50%);
     background-color: #fff;
     padding: 8px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* Ensure tooltip appears above other content */
+    z-index: 1;
 }
 
-
-.contact-icons .gmail-icon:hover + .tooltip {
-    display: block; /* Display the tooltip when Gmail icon is hovered */
-}
-
-
-
-.tooltip-container {
-    position: relative; /* Set position relative for tooltip positioning */
-}
-
-.tooltip {
-    display: none;
-    position: absolute;
-    top: 100%; /* Position below the icon */
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    background-color: #05386B; /* Dark blue background for tooltip */
-    color: #649618; /* Lightest greenish text color for tooltip */
-    padding: 8px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* Ensure tooltip appears above other content */
-}
-
-/* Show tooltip when icon is hovered */
-.gmail-icon:hover + .tooltip,
-.instagram-icon:hover + .tooltip,
-.linkedin-icon:hover + .tooltip {
+.contact-icons .gmail-icon:hover + .tooltip,
+.contact-icons .instagram-icon:hover + .tooltip,
+.contact-icons .linkedin-icon:hover + .tooltip {
     display: block;
 }
-
-
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .about-content {
-        padding: 30px; /* Reduce padding for smaller screens */
+        padding: 30px;
     }
 
     .about-text h2 {
-        font-size: 32px; /* Reduce heading size on smaller screens */
+        font-size: 32px;
     }
 
     .about-text p {
-        font-size: 18px; /* Reduce paragraph font size on smaller screens */
+        font-size: 18px;
     }
 }
