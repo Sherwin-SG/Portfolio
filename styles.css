@@ -1,9 +1,8 @@
-/* Default styles for all screen sizes */
 html, body, .container, .section {
     margin: 0;
     padding: 0;
     border: 0;
-    overflow: hidden; /* This will ensure that no horizontal scrollbar appears */
+    overflow: hidden;
 }
 
 html {
@@ -14,8 +13,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #EDF5E1; /* Lightest greenish background color */
-    color: #05386B; /* Darkest blue text color */
+    background-color: #EDF5E1;
+    color: #05386B;
 }
 
 .container {
@@ -29,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
 }
 
 .section h1, .section h2, .section h3 {
@@ -38,72 +37,58 @@ body {
 
 #welcome {
     background: linear-gradient(to bottom right, #05386B, #379683);
-    color: #fff; /* Text color for contrast */
-    padding: 50px; /* Padding for spacing */
+    color: #fff;
+    padding: 50px;
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    text-align: center; /* Center text within the section */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-/* Styling for the welcome content */
 .welcome-content {
-    max-width: 1200px; /* Set maximum width for content */
-    width: 100%; /* Take full width of the container */
+    max-width: 1200px;
+    width: 100%;
     display: flex;
-    justify-content: space-between; /* Space evenly between items */
-    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Style for the welcome text */
 .welcome-text {
-    flex: 1; /* Take remaining width */
-    text-align: left; /* Align text to the left */
-    margin-right: 20px; /* Add right margin for spacing */
-    color: #EDF5E1; /* Lightest greenish text color */
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+    color: #EDF5E1;
 }
 
-/* Style for the welcome image */
 .welcome-image {
-    flex: 1; /* Take remaining width */
-    text-align: right; /* Align image to the right */
+    flex: 1;
+    text-align: right;
 }
 
-/* Adjustments for the text and spacing */
 .welcome-image img {
-    max-width: 100%; /* Ensure image fits within container */
-    width: 300px; /* Set a minimum width for the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make the image round */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for effect */
-    transition: width 0.3s ease; /* Smooth transition for width change */
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
 }
 
 @media (max-width: 768px) {
-    /* Adjust image size for smaller screens */
     .welcome-image img {
-        width: 200px; /* Reduce width on smaller screens */
+        width: 200px;
     }
 }
 
-
 .welcome-text p {
-    font-size: 18px; /* Adjust the font size of the paragraph */
+    font-size: 18px;
 }
 
-.welcome-image img {
-    max-width: 100%; /* Ensure image fits within container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Make the image round (optional) */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a nice effect */
-}
-
-/* Style for the download CV button */
 .download-cv-button {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #5CDB95; /* Light green background color */
-    color: #05386B; /* Dark blue text color */
+    background-color: #5CDB95;
+    color: #05386B;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -112,39 +97,34 @@ body {
 }
 
 .download-cv-button:hover {
-    background-color: #379683; /* Darker green background color on hover */
-    color: #fff; /* White text color on hover */
+    background-color: #379683;
+    color: #fff;
 }
 
-/* Additional adjustments for responsiveness */
 @media (max-width: 768px) {
     .welcome-text h1 {
-        font-size: 60px; /* Reduce heading size on smaller screens */
+        font-size: 60px;
     }
 
     .download-cv-button {
-        padding: 10px 20px; /* Adjust button padding for smaller screens */
-        font-size: 14px; /* Reduce button font size for smaller screens */
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }
 
-
-/* Additional media queries can be added here for further responsiveness */
-
-
 .navbar {
-    background-color: #379683; /* Dark green background for navbar */
+    background-color: #379683;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: fixed;
-    top: 17%; /* Position at the middle of the screen vertically */
-    right: 0; /* Position at the right side of the screen */
-    transform: translateY(-50%); /* Adjust for centering */
-    z-index: 1000; /* Ensure navbar appears above other content */
-    transition: opacity 0.3s; /* Smooth transition for showing/hiding navbar */
-    opacity: 0; /* Initially hide the navbar */
-    justify-content: space-between; /* Space items evenly */
+    top: 17%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    transition: opacity 0.3s;
+    opacity: 0;
+    justify-content: space-between;
 }
 
 .navbar ul {
@@ -155,12 +135,12 @@ body {
 
 .navbar li {
     display: block;
-    margin-bottom: 10px; /* Add space between list items */
+    margin-bottom: 10px;
 }
 
 .navbar a {
     display: block;
-    color: #EDF5E1; /* Lightest greenish text color for links */
+    color: #EDF5E1;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -177,7 +157,7 @@ body {
     position: fixed;
     top: 10px;
     right: 10px;
-    z-index: 1001; /* Ensure toggle button appears above navbar */
+    z-index: 1001;
     background-color: #34495e;
     color: #fff;
     border: none;
@@ -199,19 +179,17 @@ body {
     height: 3px;
     background-color: #fff;
     border-radius: 2px;
-    transition: transform 0.3s, opacity 0.3s; /* Add transitions for smooth animation */
+    transition: transform 0.3s, opacity 0.3s;
 }
 
-/* Class for the "X" shape of the icon */
 .x-icon .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 6px); /* Rotate and move the first line */
+    transform: rotate(45deg) translate(5px, 6px);
 }
 
 .x-icon .line:nth-child(2) {
-    opacity: 0; /* Hide the second line */
+    opacity: 0;
 }
 
 .x-icon .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -6px); /* Rotate and move the third line */
+    transform: rotate(-45deg) translate(5px, -6px);
 }
-
