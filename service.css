@@ -59,23 +59,23 @@
 }
 
 .capability.webdev {
-    /* Styles for Web Development capability */
-    transform:translateX() translateY(); /* Move the capability up */
+     
+    transform:translateX() translateY();  
 }
 
 .capability.python {
-    /* Styles for Python Programming capability */
-    transform: translateX() translateY(); /* Move the capability to the left */
+    
+    transform: translateX() translateY(); 
 }
 
 .capability.video-editing {
-    /* Styles for Video Editing capability */
-    transform: translateY(); /* Move the capability down */
+  
+    transform: translateY(); 
 }
 
 .capability.sql {
-    /* Styles for SQL Databases capability */
-    transform: translateY(); /* Move the capability up */
+ 
+    transform: translateY();  
 }
 
 
