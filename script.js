@@ -1,4 +1,4 @@
-// Smooth scrolling effect for anchor links
+ 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -22,17 +22,17 @@ function toggleNavbar() {
     if (navbar.style.opacity === "0" || navbar.style.opacity === "") {
         // Show the navbar
         navbar.style.opacity = "1";
-        navbar.style.pointerEvents = "auto"; // Allow interactions with the navbar
-        icon.classList.add("x-icon"); // Change icon to close symbol
+        navbar.style.pointerEvents = "auto";  
+        icon.classList.add("x-icon");  
     } else {
         // Hide the navbar
         navbar.style.opacity = "0";
-        navbar.style.pointerEvents = "none"; // Disable interactions with the navbar
-        icon.classList.remove("x-icon"); // Change icon back to hamburger
+        navbar.style.pointerEvents = "none";  
+        icon.classList.remove("x-icon");  
     }
 }
 
-// Function to check if an element is in the viewport
+ 
 function isInViewport(element) {
     var rect = element.getBoundingClientRect();
     return (
