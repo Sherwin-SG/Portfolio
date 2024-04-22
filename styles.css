@@ -70,11 +70,22 @@ body {
 }
 
 /* Adjustments for the text and spacing */
-.welcome-text h1 {
-    font-size: 100px; /* Adjust the font size of the heading */
-    margin-bottom: 20px; /* Add space below the heading */
-    color: #333; /* Dark gray text color */
+.welcome-image img {
+    max-width: 100%; /* Ensure image fits within container */
+    width: 300px; /* Set a minimum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for effect */
+    transition: width 0.3s ease; /* Smooth transition for width change */
 }
+
+@media (max-width: 768px) {
+    /* Adjust image size for smaller screens */
+    .welcome-image img {
+        width: 200px; /* Reduce width on smaller screens */
+    }
+}
+
 
 .welcome-text p {
     font-size: 18px; /* Adjust the font size of the paragraph */
