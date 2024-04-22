@@ -1,6 +1,6 @@
 /* Styling for the About section */
 #about {
-    background-color: #5CDB95; /* Medium green background for about section */
+    background: linear-gradient(to bottom, #5CDB95, #379683);
     text-align: center;
     position: relative; /* Set position relative for positioning the icons */
     background-size: cover; /* Cover the entire section */
