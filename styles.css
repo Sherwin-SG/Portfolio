@@ -37,7 +37,7 @@ body {
 }
 
 #welcome {
-    background-color: #05386B; /* Dark blue background for welcome section */
+    background: linear-gradient(to bottom right, #05386B, #379683);
     color: #fff; /* Text color for contrast */
     padding: 50px; /* Padding for spacing */
     display: flex;
