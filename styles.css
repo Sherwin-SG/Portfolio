@@ -13,8 +13,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #EDF5E1;
-    color: #05386B;
+    background-color: #e4e3e3; 
+    color: #000; 
 }
 
 .container {
@@ -22,7 +22,6 @@ body {
 }
 
 .section {
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,21 +35,24 @@ body {
 }
 
 #welcome {
-    background: linear-gradient(to bottom right, #05386B, #379683);
-    color: #fff;
+    background: linear-gradient(to bottom , #fff, #89e5b7);
+    color: #000; 
     padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative; 
+
 }
 
 .welcome-content {
     max-width: 1200px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .welcome-text {
@@ -75,23 +77,37 @@ body {
 }
 
 @media (max-width: 768px) {
-    .welcome-image img {
-        width: 200px;
+    .welcome-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .welcome-text {
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+    
+    .welcome-image {
+        text-align: center;
     }
 }
+.welcome-text p {
+    font-size: 30px;
+    color: #000;
+}
 
-.welcome-text h1 p {
+.welcome-text h1 {
     font-size: 100px;
     font-size: 100px;
-    color: #fff; /* Change text color to white */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow for better visibility */
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 .download-cv-button {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #5CDB95;
-    color: #05386B;
+    background-color: hsl(0, 0%, 100%); 
+    color: #000000; 
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -100,8 +116,7 @@ body {
 }
 
 .download-cv-button:hover {
-    background-color: #379683;
-    color: #fff;
+    background-color: #333;
 }
 
 @media (max-width: 768px) {
@@ -116,14 +131,14 @@ body {
 }
 
 .navbar {
-    background-color: #379683;
+    background-color: #000; 
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 17%;
     right: 0;
-    transform: translateY(-50%);
+    transform: translateY(-48%);
     z-index: 1000;
     transition: opacity 0.3s;
     opacity: 0;
@@ -143,7 +158,7 @@ body {
 
 .navbar a {
     display: block;
-    color: #EDF5E1;
+    color: #fff; 
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -153,7 +168,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #f39c12;
+    background-color: #333;
 }
 
 .navbar-toggle {
@@ -161,8 +176,8 @@ body {
     top: 10px;
     right: 10px;
     z-index: 1001;
-    background-color: #34495e;
-    color: #fff;
+    background-color: #fff; 
+    color: #000; 
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -180,7 +195,7 @@ body {
 .line {
     width: 100%;
     height: 3px;
-    background-color: #fff;
+    background-color: #000; 
     border-radius: 2px;
     transition: transform 0.3s, opacity 0.3s;
 }
@@ -196,3 +211,4 @@ body {
 .x-icon .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -6px);
 }
+

@@ -1,22 +1,25 @@
 #capabilities {
-   background: linear-gradient(to bottom, #598063, #5CDB95);
+    background: linear-gradient(to bottom, #89e5b7, #ff725c);
     text-align: center;
-    padding: 50px 0;
+     
 }
 
+#capabilities h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+}
 .capabilities-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px 20px;
+    justify-content: space-around; 
+    gap: 20px 20px; 
 }
 
 .capability {
-    width: calc(50% - 20px);
-    max-width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: calc(30% - 20px); 
+    height: 12vh;
+    background-color: #fff; 
+    color: #000; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -29,27 +32,13 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.capability img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-top: 20px;
-}
-
-.capability-description {
-    padding: 20px;
-    text-align: center;
-}
-
 .capability h3 {
     font-size: 1.5rem;
-    color: #333;
     margin-bottom: 10px;
 }
 
 .capability p {
     font-size: 1rem;
-    color: #666;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -58,24 +47,18 @@
     opacity: 1;
 }
 
-.capability.webdev {
-     
-    transform:translateX() translateY();  
+@media screen and (max-width: 576px) {
+    .capability {
+        width: 80%; 
+        height: auto;
+    }
+
+    .capability h3 {
+        font-size: 1.5rem; 
+    }
+
+    .capability p {
+        font-size: 1rem; 
+        opacity: 1; 
+    }
 }
-
-.capability.python {
-    
-    transform: translateX() translateY(); 
-}
-
-.capability.video-editing {
-  
-    transform: translateY(); 
-}
-
-.capability.sql {
- 
-    transform: translateY();  
-}
-
-

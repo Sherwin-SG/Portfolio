@@ -43,9 +43,9 @@ function isInViewport(element) {
     );
 }
 
-const text = "Sherwin Gonsalves"; // The text you want to display
-const profession = "Software Developer"; // The profession text
-const delay = 100; // Delay between each letter in milliseconds
+const text = "Sherwin Gonsalves"; 
+const profession = "Software Developer"; 
+const delay = 100; 
 
 function typeText(index, element, string) {
     if (index < string.length) {
@@ -56,7 +56,44 @@ function typeText(index, element, string) {
     }
 }
 
-typeText(0, document.getElementById("typing-text"), text); // Start typing name
+typeText(0, document.getElementById("typing-text"), text); 
 setTimeout(() => {
-    typeText(0, document.getElementById("profession"), profession); // Start typing profession
+    typeText(0, document.getElementById("profession"), profession); 
 }, delay * text.length);
+
+
+
+const skills = [
+    'HTML/CSS',
+    'JavaScript',
+    'Responsive Design',
+    'Python Programming Language',
+    'Java',
+    'C/C++',
+    'PHP',
+    'Flask (Python)',
+    'MySQL'
+];
+
+
+function generateSkillHTML(skill) {
+    return `
+        <div class="capability">
+            <div class="capability-description">
+                <h3>${skill}</h3>
+            </div>
+        </div>
+    `;
+}
+
+
+function renderSkills() {
+    const skillsContainer = document.getElementById('skills-container');
+    skills.forEach(skill => {
+        const skillHTML = generateSkillHTML(skill);
+        skillsContainer.innerHTML += skillHTML;
+    });
+}
+
+
+renderSkills();

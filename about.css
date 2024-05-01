@@ -1,94 +1,85 @@
-/* Styling for the About section */
-#about {
-    background: linear-gradient(to bottom, #5CDB95, #379683);
-    text-align: center;
-    position: relative;
-    background-size: cover;
-    background-position: center;
+/* General styles */
+.section {
+    background: linear-gradient(to bottom, #fff, #ff725c); /* Gradient background */
 }
 
 .about-content {
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    max-width: 800px;
-    padding: 50px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    align-items: center;
+    text-align: center; 
+    margin-top: 2vh;
+}
+
+.about-text {
+    margin-bottom: 30px;
 }
 
 .about-text h2 {
-    font-size: 40px;
-    color: #05386B;
+    font-size: 28px;
     margin-bottom: 20px;
+    color: #333; 
 }
 
 .about-text p {
-    font-size: 22px;
+    font-size: 23px;
     line-height: 1.6;
-    color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .contact-icons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+    
 }
 
-.contact-icons a {
-    margin: 0 10px;
+.tooltip-container {
+    position: relative;
+    margin: 0 10px; 
 }
+
+.tooltip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: #333; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .contact-icons img {
     width: 60px;
     height: 60px;
-    object-fit: cover;
 }
 
-/* Contact Icons Hover Effect */
-.contact-icons a:hover img {
-    filter: brightness(1.2);
-}
 
-.contact-icons .tooltip-container {
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.contact-icons .tooltip {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #fff;
-    padding: 8px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.contact-icons .gmail-icon:hover + .tooltip,
-.contact-icons .instagram-icon:hover + .tooltip,
-.contact-icons .linkedin-icon:hover + .tooltip {
-    display: block;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-    .about-content {
-        padding: 30px;
-    }
-
-    .about-text h2 {
-        font-size: 32px;
-    }
-
-    .about-text p {
-        font-size: 18px;
+@media screen and (max-width: 768px) {
+    .contact-info p {
+        font-size: 18px; 
     }
 }
+
