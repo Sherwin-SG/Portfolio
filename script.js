@@ -43,3 +43,20 @@ function isInViewport(element) {
     );
 }
 
+const text = "Sherwin Gonsalves"; // The text you want to display
+const profession = "Software Developer"; // The profession text
+const delay = 100; // Delay between each letter in milliseconds
+
+function typeText(index, element, string) {
+    if (index < string.length) {
+        element.textContent += string[index];
+        setTimeout(() => {
+            typeText(index + 1, element, string);
+        }, delay);
+    }
+}
+
+typeText(0, document.getElementById("typing-text"), text); // Start typing name
+setTimeout(() => {
+    typeText(0, document.getElementById("profession"), profession); // Start typing profession
+}, delay * text.length);
