@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: auto;
+    height: 100vh;
 }
 
 .section h1, .section h2, .section h3 {
@@ -210,5 +210,10 @@ body {
 
 .x-icon .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -6px);
+}
+@media (max-width: 768px) {
+    .section {
+        height: auto; /* Change height to auto for smaller screens */
+    }
 }
 
