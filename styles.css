@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 110vh;
+    height: auto;
 }
 
 .section h1, .section h2, .section h3 {
