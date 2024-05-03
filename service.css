@@ -1,64 +1,28 @@
-#capabilities {
-    background: linear-gradient(to bottom, #89e5b7, #ff725c);
-    text-align: center;
-     
+
+
+.image-container {
+    position: relative; /* Make the container relatively positioned */
+    text-align: center; /* Center align the text within the container */
+    display: inline-block; /* Display the containers inline */
+    margin: 0 5px; /* Add some margin between image containers */
 }
 
-#capabilities h2 {
-    margin-bottom: 50px;
-    font-size: 50px;
-}
-.capabilities-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-    gap: 20px 20px; 
-}
-
-.capability {
-    width: calc(30% - 20px); 
-    height: 12vh;
-    background-color: #fff; 
-    color: #000; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+.image-name {
+    position: absolute; /* Position the name absolutely */
+    bottom: 100%; /* Position it above the image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(0, 0, 0, 0.7); /* Add background color to enhance visibility */
+    color: #fff; /* Set text color */
+    padding: 3px 8px; /* Add padding for better spacing */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 12px; /* Adjust font size */
+    opacity: 0; /* Hide the name initially */
+    transition: opacity 0.3s ease; /* Add transition effect */
 }
 
-.capability:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.image-container:hover .image-name {
+    opacity: 1; /* Show the name on hover */
 }
 
-.capability h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.capability p {
-    font-size: 1rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.capability:hover p {
-    opacity: 1;
-}
-
-@media screen and (max-width: 576px) {
-    .capability {
-        width: 80%; 
-        height: auto;
-    }
-
-    .capability h3 {
-        font-size: 1.5rem; 
-    }
-
-    .capability p {
-        font-size: 1rem; 
-        opacity: 1; 
-    }
-}
+ 

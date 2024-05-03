@@ -15,6 +15,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+
 function toggleNavbar() {
     var navbar = document.getElementById("navbar");
     var icon = document.getElementById("hamburger-icon");
@@ -43,9 +44,8 @@ function isInViewport(element) {
     );
 }
 
-const text = "Sherwin Gonsalves"; 
-const profession = "Software Developer"; 
-const delay = 100; 
+const text = "Sherwin Gonsalves";
+const delay = 100;
 
 function typeText(index, element, string) {
     if (index < string.length) {
@@ -56,44 +56,11 @@ function typeText(index, element, string) {
     }
 }
 
-typeText(0, document.getElementById("typing-text"), text); 
-setTimeout(() => {
-    typeText(0, document.getElementById("profession"), profession); 
-}, delay * text.length);
+typeText(0, document.getElementById("typing-text"), text);
 
 
 
-const skills = [
-    'HTML/CSS',
-    'JavaScript',
-    'Responsive Design',
-    'Python Programming Language',
-    'Java',
-    'C/C++',
-    'PHP',
-    'Flask (Python)',
-    'MySQL'
-];
 
 
-function generateSkillHTML(skill) {
-    return `
-        <div class="capability">
-            <div class="capability-description">
-                <h3>${skill}</h3>
-            </div>
-        </div>
-    `;
-}
 
-
-function renderSkills() {
-    const skillsContainer = document.getElementById('skills-container');
-    skills.forEach(skill => {
-        const skillHTML = generateSkillHTML(skill);
-        skillsContainer.innerHTML += skillHTML;
-    });
-}
-
-
-renderSkills();
+ 
